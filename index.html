@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GameVault | Free-to-Play Games</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <div class="logo">
+            🎮 GameVault
+        </div>
+
+        <p>
+            Discover Free-to-Play Games
+        </p>
+
+    </header>
+
+
+
+    <!-- MAIN CONTENT -->
+
+    <main class="container">
+
+
+        <!-- HERO -->
+
+        <section class="hero">
+
+            <h1>
+                Explore Free-to-Play Games
+            </h1>
+
+            <p>
+                Search and discover games from the FreeToGame API.
+            </p>
+
+
+            <!-- SEARCH -->
+
+            <div class="search-area">
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search for a game..."
+                >
+
+                <button id="searchButton">
+                    Search
+                </button>
+
+            </div>
+
+
+            <!-- GENRE FILTER -->
+
+            <div class="filters">
+
+                <label for="genreSelect">
+                    Filter by Genre:
+                </label>
+
+                <select id="genreSelect">
+
+                    <option value="">
+                        All Games
+                    </option>
+
+                    <option value="mmorpg">
+                        MMORPG
+                    </option>
+
+                    <option value="shooter">
+                        Shooter
+                    </option>
+
+                    <option value="strategy">
+                        Strategy
+                    </option>
+
+                    <option value="moba">
+                        MOBA
+                    </option>
+
+                    <option value="racing">
+                        Racing
+                    </option>
+
+                    <option value="sports">
+                        Sports
+                    </option>
+
+                    <option value="social">
+                        Social
+                    </option>
+
+                    <option value="sandbox">
+                        Sandbox
+                    </option>
+
+                    <option value="open-world">
+                        Open World
+                    </option>
+
+                    <option value="survival">
+                        Survival
+                    </option>
+
+                    <option value="pvp">
+                        PvP
+                    </option>
+
+                    <option value="pve">
+                        PvE
+                    </option>
+
+                </select>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- RESULTS -->
+
+        <section class="results-section">
+
+
+            <div class="section-title">
+
+                <h2 id="resultsTitle">
+                    Free-to-Play Games
+                </h2>
+
+                <span id="gameCount"></span>
+
+            </div>
+
+
+
+            <!-- LOADING -->
+
+            <div id="loading" class="message hidden">
+
+                <div class="spinner"></div>
+
+                <p>
+                    Loading games...
+                </p>
+
+            </div>
+
+
+
+            <!-- ERROR -->
+
+            <div
+                id="errorMessage"
+                class="message error hidden"
+            >
+
+                <h3>
+                    Something went wrong.
+                </h3>
+
+                <p id="errorText">
+                    Unable to load games.
+                </p>
+
+            </div>
+
+
+
+            <!-- EMPTY -->
+
+            <div
+                id="emptyMessage"
+                class="message hidden"
+            >
+
+                <h3>
+                    No games found.
+                </h3>
+
+                <p>
+                    Try another search or genre.
+                </p>
+
+            </div>
+
+
+
+            <!-- GAME CARDS -->
+
+            <div
+                id="gamesContainer"
+                class="games-grid"
+            ></div>
+
+
+        </section>
+
+    </main>
+
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <p>
+            © 2026 GameVault
+        </p>
+
+        <p>
+            Data provided by
+            <a
+                href="https://www.freetogame.com/"
+                target="_blank"
+            >
+                FreeToGame
+            </a>
+        </p>
+
+    </footer>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
